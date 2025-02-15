@@ -26,7 +26,9 @@ function getSummNumbers(obj) {
 console.log(getSummNumbers(user));
 
 function getSortArr(obj) {
-  const resArr = Object.keys(obj).filter((ind) => !isNaN(obj[ind])).sort((a, b) => obj[b] - obj[a]);
+  const resArr = Object.keys(obj)
+  .filter((ind) => !isNaN(obj[ind])).
+  sort((a, b) => obj[b] - obj[a]);
   return resArr;
 }
 
